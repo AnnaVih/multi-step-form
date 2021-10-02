@@ -3,11 +3,18 @@ import { ThemeProvider } from 'styled-components'
 
 export const colors = {
     neutral: {
-        light: '#f7f4f0',
+        lightGrey: '#f5f3f0',
+        grey: '#d4d3d1',
+        darkGrey: '#747371',
+        white: '#fff',
+        black: '#000'
     },
+
     status: {
-        success: '#72C77D',
+        success: '#3ba649',
         error: '#D32F2F',
+        active: '#2170b9',
+        disabled: '#cccccc'
     },
 }
 

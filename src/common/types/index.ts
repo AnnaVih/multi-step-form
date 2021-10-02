@@ -5,7 +5,13 @@ export interface FluxStandardAction {
     meta?: unknown
 }
 
+export interface Step {
+    id: number
+    name: string
+    isCompleted: boolean
+}
 export interface FormConfig {
+    steps: Step[]
     activeStep: number
 }
 

@@ -8,11 +8,16 @@ import {
 import { LinkThemeProvider } from './common/theme'
 import { MultiStepForm } from './MultiStepForm'
 
-const App = () => {
+const App = (): JSX.Element => {
     const defaultState: AppState = {
         appData: {
             formConfig: {
                 activeStep: 0,
+                steps: [
+                    { id: 0, name: 'User', isCompleted: false },
+                    { id: 1, name: 'Privacy', isCompleted: false },
+                    { id: 2, name: 'Done', isCompleted: false },
+                ],
             },
         },
     }
