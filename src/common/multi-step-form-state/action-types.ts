@@ -1,0 +1,1 @@
+export const SET_FORM_CONFIG = 'SET_FORM_CONFIG'
