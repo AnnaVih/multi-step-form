@@ -1,3 +1,5 @@
+import { DeepMap, FieldError } from 'react-hook-form'
+
 export interface FluxStandardAction {
     type: string
     payload?: unknown
@@ -18,3 +20,5 @@ export interface FormConfig {
 export interface AppData {
     formConfig: FormConfig
 }
+
+export type GenericInputErrors = DeepMap<Record<string, any>, FieldError>

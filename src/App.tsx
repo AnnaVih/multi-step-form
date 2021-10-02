@@ -1,12 +1,12 @@
-import React, { useReducer } from 'react'
+import { useReducer } from 'react'
 import { Layout } from './common/components/layout'
+import { MultiStepForm } from './common/components/multi-step-form'
 import {
     appReducer,
     AppState,
     AppStateProvider,
 } from './common/multi-step-form-state'
 import { LinkThemeProvider } from './common/theme'
-import { MultiStepForm } from './MultiStepForm'
 
 const App = (): JSX.Element => {
     const defaultState: AppState = {
