@@ -1,5 +1,6 @@
 import React from 'react'
+import { StyledMultiStepForm } from './styles'
 
 export const MultiStepForm = () => {
-    return <form>form</form>
+    return <StyledMultiStepForm>form</StyledMultiStepForm>
 }
