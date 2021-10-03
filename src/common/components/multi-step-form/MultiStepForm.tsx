@@ -20,7 +20,6 @@ export const MultiStepForm = (): JSX.Element => {
         appData: { formConfig },
         appDispatch,
     } = useAppState()
-
     const {
         handleSubmit,
         register,

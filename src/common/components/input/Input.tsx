@@ -4,10 +4,10 @@ import { ErrorMessage } from '../error-message'
 import { StyledInput, StyledInputWrapper, StyledLabel } from './styles'
 
 interface InputProps extends React.HTMLAttributes<HTMLInputElement> {
-    label: string
     type: string
     name: string
-    register: UseFormRegister<FieldValues>
+    register?: UseFormRegister<FieldValues>
+    label?: string
     rules?: RegisterOptions
     error?: string
 }
@@ -25,7 +25,7 @@ export const Input = ({
         <StyledLabel htmlFor={name} isRequired={!!rules?.required}>
             {label}
         </StyledLabel>
-        <StyledInput id={name} type={type} {...register(name, rules)} />
+        <StyledInput id={name} type={type} {...register && register(name, rules)} />
         {error && <ErrorMessage error={error} />}
     </StyledInputWrapper>
 )
